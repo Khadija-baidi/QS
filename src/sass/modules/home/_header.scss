@@ -1,0 +1,138 @@
+
+nav{
+    background-color: white;
+   
+    height: 100px;
+    box-shadow: 0 0 4px rgba(128, 128, 128, 0.262);
+    display: block;
+ top: 0;
+//   position: fixed;
+ 
+    width: 100%;
+    z-index: 200 ;
+}
+#checkbox , label{
+    display: none;
+}
+
+body{height: 200vh;}
+
+.logo{
+    height: 50px;
+}
+.title{
+    height: 50px;
+}
+.tag{
+    display: flex;
+    gap: 5vh;
+}
+a{
+    color: #000;
+    padding-top: 10px;
+}
+.tag >button{
+    background: #549DB4;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+a:hover{
+    color: #549DB4;
+}
+.dropdown-center >button{
+    border: none;
+    background-color: white;
+    padding-top: 10px;
+}
+// .section2 >.cover{
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     z-index: 200;
+// }
+.section2{
+    padding-top: 100px;
+    background-image: url(../../../../public/images/hero-bg-light.webp)  ;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section2::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.bg{
+//    margin-top: 15vh;
+    background: #000;
+    color: white;
+width:100vh ;
+z-index: -200;
+padding-top: 100px;
+}
+.text{
+    padding: 30px;
+}
+.text >h1 >span{
+    color: #549DB4;
+    font-size: bold;
+}
+.text >p{
+font-size: larger;
+color: #0000009a;
+}
+.part2 >button{
+    background: #549DB4;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+
+}
+
+.part2{
+    display: flex;
+    gap: 10px;
+}
+.part2 >a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0;
+}
+.photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ z-index: 50px;
+    
+}
+@media (max-width:480px) {
+
+    
+    
+    .tag , .tag>div{
+      a{
+        background-color: white;
+      }
+        display: flex;
+        background-color: #000;
+        height: 100%; 
+        flex-direction: column ;
+        top: 0;
+        left: -200%;
+         width: 50%;
+        height: 100%; 
+         padding: 5vh;
+    }
+    
+}
